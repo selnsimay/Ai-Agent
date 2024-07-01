@@ -35,9 +35,7 @@ class BiologicalAgents():
             llm = model
         )
 
-# WRITER AGENTS, 
-# could be edited into the biological agent in itself depending on what works better
-class WriterAgents():
+# WRITER AGENTS
     def molgen_writer(self):
         return Agent(
             role= "Scientific Writer",
@@ -56,7 +54,6 @@ class WriterAgents():
     )
 
 # REVIEWER AGENTS
-class Reviewer():
     def reader_agent(self):
         return Agent(
             role="Reader",
