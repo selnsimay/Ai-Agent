@@ -1,3 +1,4 @@
+# BIOLOGIST AGENTS
 scientist_1 = Agent(
     role= "Cellular Biologist",
     goal= "To understand the connection between the {genes} in the sense of the pathway they are connected in",
@@ -25,6 +26,9 @@ scientist_2 = Agent(
     allow_delegation = False,
     llm = model
 )
+
+# WRITER AGENTS
+
 writer_1= Agent(
     role= "Scientific Writer",
     goal= "To write a 2 pages report."
@@ -40,6 +44,9 @@ writer_1= Agent(
     allow_delegation =False,
     llm = model
 )
+
+# REVIEWER AGENTS
+
 audience=Agent(
     role="Reader",
     goal="To read, understand and cricticise the paper",
