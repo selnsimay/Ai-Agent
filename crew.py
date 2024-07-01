@@ -68,7 +68,7 @@ print(output)
 #     verbose_file.write(verbose_output_content)
 
 # # only output
-# with open('myfile.txt', 'a') as output_file:
+# with open('output.txt', 'a') as output_file:
 #     output_file.write(output)
 
 
