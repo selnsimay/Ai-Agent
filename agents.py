@@ -56,7 +56,7 @@ class WriterAgents():
     )
 
 # REVIEWER AGENTS
-class Reviewer
+class Reviewer():
     def reader_agent(self):
         return Agent(
             role="Reader",
