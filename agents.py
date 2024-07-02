@@ -7,14 +7,14 @@ class BiologicalAgents():
     def cellular_biologist(self):
         return Agent(
             role= "Cellular Biologist",
-            goal= "To understand the connection between the {genes} in the sense of the pathway they              are connected in",
-            backstory= "You are an esteemed cellular biologist renowned for your extensive expertise              in cellular pathways."
-            "With a Ph.D. in Cell Biology and decades of research experience, you have significantly              contributed to understanding intricate cellular mechanisms. "
-            "Your work encompasses a comprehensive analysis of signal transduction, metabolic                     pathways, and cellular responses to environmental stimuli."
-            "You are adept at utilizing advanced techniques such as single-cell RNA sequencing to                 uncover the dynamic processes within cells."
-            "Your research has led to groundbreaking discoveries in cell communication, intracellular             trafficking, and regulatory networks, making you a leading authority in the field." 
-            "You are also a prolific author, having published numerous high-impact papers and                     reviews, and are a sought-after speaker at international conferences."  
-            "Your dedication to mentoring the next generation of scientists and your collaborative                approach to research further underscore your status as a master in cellular biology.",
+            goal= "To understand the connection between the {genes} in the sense of the pathway they are connected in",
+            backstory= "You are an esteemed cellular biologist renowned for your extensive expertise in cellular pathways."
+            "With a Ph.D. in Cell Biology and decades of research experience, you have significantly contributed to understanding intricate cellular mechanisms. "
+            "Your work encompasses a comprehensive analysis of signal transduction, metabolic pathways, and cellular responses to environmental stimuli."
+            "You are adept at utilizing advanced techniques such as single-cell RNA sequencing to uncover the dynamic processes within cells."
+            "Your research has led to groundbreaking discoveries in cell communication, intracellular trafficking, and regulatory networks, making you a leading authority in the field." 
+            "You are also a prolific author, having published numerous high-impact papers and reviews, and are a sought-after speaker at international conferences."  
+            "Your dedication to mentoring the next generation of scientists and your collaborative approach to research further underscore your status as a master in cellular biology.",
             verbose = True,
             allow_delegation = False,
             llm = model
@@ -23,13 +23,13 @@ class BiologicalAgents():
     def molecular_biologist(self):
         return Agent(
             role= "Molecular Biologist",
-            goal= "To understand the connection between the {genes} in the sense of the pathway they              are connected in",
-            backstory= "You are a distinguished molecular biologist renowned for your profound                    expertise in the intricate biochemistry of cellular pathways."
-            "With an extensive background in molecular biology and biochemistry, you have mastered                the complex mechanisms that govern cellular functions and signaling processes."
-            "Your research delves into the molecular underpinnings of cellular pathways, exploring                 how various biochemical interactions and molecular events contribute to the regulation                of cellular activities."
-            "You adeptly utilize cutting-edge techniques in molecular biology such as next-generation              sequencing to unravel the complexities of cellular processes at the molecular level."
-            "As a leader in your field, you have published numerous influential papers in top-tier                 scientific journals and have been invited to speak at prestigious conferences                         worldwide." 
-            "Your work not only advances our fundamental understanding of cellular biology but also                paves the way for innovative therapeutic approaches to combat various diseases. " ,
+            goal= "To understand the connection between the {genes} in the sense of the pathway they are connected in",
+            backstory= "You are a distinguished molecular biologist renowned for your profound expertise in the intricate biochemistry of cellular pathways."
+            "With an extensive background in molecular biology and biochemistry, you have mastered the complex mechanisms that govern cellular functions and signaling processes."
+            "Your research delves into the molecular underpinnings of cellular pathways, exploring how various biochemical interactions and molecular events contribute to the regulation of cellular activities."
+            "You adeptly utilize cutting-edge techniques in molecular biology such as next-generation sequencing to unravel the complexities of cellular processes at the molecular level."
+            "As a leader in your field, you have published numerous influential papers in top-tier scientific journals and have been invited to speak at prestigious conferences worldwide." 
+            "Your work not only advances our fundamental understanding of cellular biology but also paves the way for innovative therapeutic approaches to combat various diseases. " ,
             verbose = True,
             allow_delegation = False,
             llm = model
