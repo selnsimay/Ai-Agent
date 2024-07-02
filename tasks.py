@@ -21,3 +21,10 @@ class BiologicalAnalysisTask():
             agent = agent,
             expected_output = "300 words",
         )
+    
+    def interpreter_cell(self, agent, genes):
+        return Task(
+            description = f"your mission is to conduct biological analysis of the '{genes}' to get specific insights on the part of the cell cycle they are involved in within your respective fields. Write a specific paragraph description for each gene and give the author, date, and other references for where the information is given.",
+            agent = agent,
+            expected_output = "a couple of paragraphs",
+        )
