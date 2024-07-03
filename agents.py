@@ -166,7 +166,7 @@ class BiologicalAgents():
         return Agent(
             role="Analytically Compare",
             goal="To compare the findings and deduce how similar and different the information is",
-            backstory="write in...",
+            backstory="You are a skilled writer and analytical thinker deeply immersed in the realm of biology. With a keen eye for detail and a passion for unraveling scientific complexities, you meticulously compare and critique diverse biological analyses. Renowned for your ability to synthesize information from various sources, you excel in uncovering similarities, differences, and innovative insights across research outputs. Your work fosters a deeper understanding of biological phenomena, contributing to the advancement of knowledge in this dynamic field.",
             verbose=True,
             allow_delegation=False,
             llm= model
