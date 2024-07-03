@@ -10,13 +10,13 @@ from tasks import BiologicalAnalysisTask
 agents = BiologicalAgents()
 tasks = BiologicalAnalysisTask()
 
-# verbose_output = StringIO()
-# sys.stdout = verbose_output
+verbose_output = StringIO()
+sys.stdout = verbose_output
 
 print("## Welcome to the Biology Crew")
 print('-------------------------------')
 
-genes = 'DLGAP5, DEPDC1, KIF20A, TROAP, KIF18B, KIF2C, RRM2, CDC25C, CCNB2, KIF14, CENPF, PRR11, UBE2C, PIMREG, PTTG1, NEK2, HMMR, PLK1, AURKA, MND1, LGALS4, DEFB1, OASL'
+genes = 'C9orf152, PRR15L, FAM83E, JMJD1C-AS1, SSTR5-AS1, OTOGL, DOC2B, SLC17A1, SLC17A3, SLC51B, SLC5A9, PDZD3, SLC39A5, ANKS4B, MYO7B, FUT3'
 
 # Define your custom agents and tasks here
 custom_agent_1 = agents.cellular_biologist()
@@ -78,10 +78,10 @@ crew = Crew(
 result = crew.kickoff()
 print(result)
 
-# # automatically log
-# sys.stdout = sys.__stdout__
-# verbose_output.seek(0)
-# verbose_output_content = verbose_output.read()
-# print(verbose_output_content)
-# with open('verbose.txt', 'a') as verbose_file:
-#     verbose_file.write(verbose_output_content)
+# automatically log
+sys.stdout = sys.__stdout__
+verbose_output.seek(0)
+verbose_output_content = verbose_output.read()
+print(verbose_output_content)
+with open('verbose.txt', 'a') as verbose_file:
+    verbose_file.write(verbose_output_content)
