@@ -1,3 +1,5 @@
+import sys
+from io import StringIO
 from crewai import Agent, Task, Crew, Process
 from langchain_community.llms import Ollama
 model = Ollama(model= 'llama3')
@@ -7,6 +9,9 @@ from tasks import BiologicalAnalysisTask
 
 agents = BiologicalAgents()
 tasks = BiologicalAnalysisTask()
+
+# verbose_output = StringIO()
+# sys.stdout = verbose_output
 
 print("## Welcome to the Biology Crew")
 print('-------------------------------')
@@ -73,20 +78,23 @@ custom_task_10 = tasks.interpreter_cell(
 
 
 
-# # Define your custom crew here
-# crew = Crew(
-#         agents=[custom_agent_1, custom_agent_2, custom_agent_3,custom_agent_3,custom_agent_5,custom_agent_6,custom_agent_7,custom_agent_8,custom_agent_9,custom_agent_10],
-#         tasks=[custom_task_1, custom_task_2,custom_task_3,custom_task_4,custom_task_5,custom_task_6, custom_task_7,custom_task_8,custom_task_9,custom_task_10],
-#         verbose=True,
-#         process = Process.sequential
-# )
-
+# Define your custom crew here
 crew = Crew(
-        agents=[custom_agent_1],
-        tasks=[custom_task_1],
+        agents=[custom_agent_1, custom_agent_2, custom_agent_3,custom_agent_3,custom_agent_5,custom_agent_6,custom_agent_7,custom_agent_8,custom_agent_9,custom_agent_10],
+        tasks=[custom_task_1, custom_task_2,custom_task_3,custom_task_4,custom_task_5,custom_task_6, custom_task_7,custom_task_8,custom_task_9,custom_task_10],
         verbose=True,
+        process = Process.sequential
 )
+
 
 
 result = crew.kickoff()
 print(result)
+
+# # automatically log
+# sys.stdout = sys.__stdout__
+# verbose_output.seek(0)
+# verbose_output_content = verbose_output.read()
+# print(verbose_output_content)
+# with open('verbose.txt', 'a') as verbose_file:
+#     verbose_file.write(verbose_output_content)
