@@ -162,4 +162,14 @@ class BiologicalAgents():
             llm= model
         )
 
+    def compare_agent(self):
+        return Agent(
+            role="Analytically Compare",
+            goal="To compare the findings and deduce how similar and different the information is",
+            backstory="write in...",
+            verbose=True,
+            allow_delegation=False,
+            llm= model
+        )
+
 

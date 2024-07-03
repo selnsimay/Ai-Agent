@@ -32,36 +32,74 @@ custom_agent_10 = agents.systems_biologist()
 
 
 # Custom tasks include agent name and variables as input
-custom_task_1 = tasks.interpreter_cell(
+
+# get information of genes first 
+custom_task_1 = tasks.info_dump(
     custom_agent_1, genes,
 )
-custom_task_2 = tasks.interpreter_cell(
+custom_task_2 = tasks.info_dump(
     custom_agent_2, genes,
 )
-custom_task_3 = tasks.interpreter_cell(
+custom_task_3 = tasks.info_dump(
     custom_agent_3, genes,
 )
-custom_task_4 = tasks.interpreter_cell(
+custom_task_4 = tasks.info_dump(
     custom_agent_4, genes,
 )
-custom_task_5 = tasks.interpreter_cell(
+custom_task_5 = tasks.info_dump(
     custom_agent_5, genes,
 )
-custom_task_6 = tasks.interpreter_cell(
+custom_task_6 = tasks.info_dump(
     custom_agent_6, genes,
 )
-custom_task_7 = tasks.interpreter_cell(
+custom_task_7 = tasks.info_dump(
     custom_agent_7, genes,
 )
-custom_task_8 = tasks.interpreter_cell(
+custom_task_8 = tasks.info_dump(
     custom_agent_8, genes,
 )
-custom_task_9 = tasks.interpreter_cell(
+custom_task_9 = tasks.info_dump(
     custom_agent_9, genes,
 )
-custom_task_10 = tasks.interpreter_cell(
+custom_task_10 = tasks.info_dump(
     custom_agent_10, genes,
 )
+
+# hypothesize 
+
+custom_task_1 = tasks.hypothesize(
+    custom_agent_1, genes,
+)
+custom_task_2 = tasks.hypothesize(
+    custom_agent_2, genes,
+)
+custom_task_3 = tasks.hypothesize(
+    custom_agent_3, genes,
+)
+custom_task_4 = tasks.hypothesize(
+    custom_agent_4, genes,
+)
+custom_task_5 = tasks.hypothesize(
+    custom_agent_5, genes,
+)
+custom_task_6 = tasks.hypothesize(
+    custom_agent_6, genes,
+)
+custom_task_7 = tasks.hypothesize(
+    custom_agent_7, genes,
+)
+custom_task_8 = tasks.hypothesize(
+    custom_agent_8, genes,
+)
+custom_task_9 = tasks.hypothesize(
+    custom_agent_9, genes,
+)
+custom_task_10 = tasks.hypothesize(
+    custom_agent_10, genes,
+)
+
+
+# compare agents 
 
 
 
