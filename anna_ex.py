@@ -30,19 +30,6 @@ custom_agent_8 = agents.onco_res()
 custom_agent_9 = agents.oncologist_physician()
 custom_agent_10 = agents.systems_biologist()
 
-# agents_dict = {
-#     'custum_agent_1':agents.cellular_biologist(),
-#     'custom_agent_2': agents.computational_biologist(),
-#     'custom_agent_3': agents.cell_cyc(),
-#     'custom_agent_4': agents.drug_dev(),
-#     'custom_agent_5': agents.epigenetics_biologist(),
-#     'custom_agent_6': agents.genereg_expert(),
-#     'custom_agent_7': agents.molecular_biologist(),
-#     'custom_agent_8': agents.onco_res(),
-#     'custom_agent_9': agents.oncologist_physician(),
-#     'custom_agent_10': agents.systems_biologist()
-# }
-
 
 # Custom tasks include agent name and variables as input
 custom_task_1 = tasks.interpreter_cell(
