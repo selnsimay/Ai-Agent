@@ -22,7 +22,7 @@ class BiologicalAnalysisTask():
             expected_output = "300 words",
         )
     
-    def interpreter_cell(self, agent, genes):
+    def interpreter(self, agent, genes):
         return Task(
             description = f"your mission is to conduct biological analysis of the '{genes}' to get specific insights on their functions, enrichments, and any other biological data to help create an interepration of these genes within your respective fields. Write a paragraph length description for each gene and how they may interact as a whole. Give the author, date, and other references for where the information is given.",
             agent = agent,
@@ -31,7 +31,7 @@ class BiologicalAnalysisTask():
 
     def hypothesize(self, agent, genes):
         return Task(
-            description = f"your mission is to conduct biological analysis of the '{genes}' based on the information given to create a hypothesis of these genes' functions, significance, and context within your respective fields. Write a description for each gene and then in general how they may interact as a whole. Make sure to have a reliable biological mechanism of these genes.",
+            description = f"your mission is to conduct biological analysis of the '{genes}' based on the information already given to you. Create a hypothesis of these genes' functions, significance, and context within your respective fields. Write a description for each gene and then in general how they may interact as a whole. Make sure to have a reliable biological mechanism of these genes.",
             agent = agent,
             expected_output = "a couple of paragraphs",
         )
