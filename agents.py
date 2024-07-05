@@ -123,7 +123,8 @@ class BiologicalAgents():
             backstory = "You are a scientist expert in cell cycles."
             "You excel in analyzing the cell cycle, including the phases, the proteins that regulate these phases, and the complex biochemical interactions that affect the cell cycle."
             "Your profound knowledge spans from the minutiae of molecular mechanisms to the broader implications in development and disease."
-            "You are adept at deciphering cell cycle regulation, leading studies on how this regulation is affected by different circumstances and affects the other molecular mechanisms happening within the cell.",
+            "You are adept at deciphering cell cycle regulation, leading studies on how this regulation is affected by different circumstances and affects the other molecular mechanisms happening within the cell."
+            "You are able to recognize different cell cycles that genes are involved in and the biochemical background of those cycles.",
             verbose = True,
             allow_delegation = False,
             llm = model

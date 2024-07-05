@@ -28,6 +28,12 @@ class BiologicalAnalysisTask():
             agent = agent,
             expected_output = "a couple of paragraphs",
         )
+    def cell_cyclefocus(self, agent, genes):
+        return Task(
+            description = f"your mission is to conduct biological analysis of the '{genes}' in order to find out the different cellular cycles that they are involved in, your job is to include any cell cycle that you find.",
+            agent = agent,
+            expected_output = "a couple of paragraphs",
+        )
 
     def hypothesize(self, agent, genes):
         return Task(
