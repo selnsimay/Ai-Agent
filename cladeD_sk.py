@@ -126,7 +126,7 @@ crew = Crew(
 
 result = crew.kickoff()
 print(result)
-
+print('code is working')
 # automatically log
 sys.stdout = sys.__stdout__
 verbose_output.seek(0)
