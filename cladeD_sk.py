@@ -16,7 +16,7 @@ sys.stdout = verbose_output
 print("## Welcome to the Biology Crew")
 print('-------------------------------')
 
-genes = 'DLGAP5, DEPDC1, KIF20A, TROAP, KIF18B, KIF2C, RRM2, CDC25C, CCNB2, KIF14, CENPF, PRR11, UBE2C, PIMREG, PTTG1, NEK2, HMMR, PLK1, AURKA, MND1, LGALS4, DEFB1, OASLp'
+genes = 'GPR153, TMEM100, FRMPD1, ANKRD22, TMEM86A, UNC80, CLIC2, STEAP4, TROAP, DLGAP5, KIF20A, KIF18B, KIF14,  PRSS12, RNASE1, RNASE4, TFPI2, GBP5, OASL, AGR2, CFAP70, METRNL, MANSC4'
 
 # Define your custom agents and tasks here
 custom_agent_1 = agents.cellular_biologist()
@@ -126,11 +126,10 @@ crew = Crew(
 
 result = crew.kickoff()
 print(result)
-print('code is working')
 # automatically log
 sys.stdout = sys.__stdout__
 verbose_output.seek(0)
 verbose_output_content = verbose_output.read()
 print(verbose_output_content)
-with open('cladeDlog.txt', 'a') as verbose_file:
+with open('cladeGlog.txt', 'a') as verbose_file:
     verbose_file.write(verbose_output_content)
